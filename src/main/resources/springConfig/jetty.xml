@@ -1,4 +1,3 @@
-<!--EmbeddedJetty config-->
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -17,7 +16,7 @@
 			<bean id="handlers" class="org.eclipse.jetty.server.handler.HandlerList">
 				<property name="handlers">
 					<list>
-						<bean id="" class="org.eclipse.jetty.webapp.WebAppContext">
+						<bean id="webAppContext" class="org.eclipse.jetty.webapp.WebAppContext">
 							<property name="contextPath" value="/springmvc" />
 							<property name="descriptor" value=".\src\main\webapp\WEB-INF\web.xml" />
 							<property name="resourceBase" value=".\src\main\webapp" />
